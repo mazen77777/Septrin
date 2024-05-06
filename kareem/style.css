@@ -1,0 +1,156 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1c8340;
+  background-color: #ffffff;
+  background:url(pngtree-website-business-blu-ray-image_2446507.jpg) no-repeat ;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+
+
+.movie-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 50px;
+}
+
+.movie {/*تصميم اطارات الموقع*/
+  
+  width: 35%;
+  background-color: orangered;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 2px 4px rgba(55, 53, 53, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.movie:hover {
+  transform: translateY(-5px);
+}
+
+.movie img {
+  width: 100%;
+  border-radius: 5px;  
+}
+
+.movie h2 {
+  margin-top: 10px;
+  font-size: 20px;
+  color: white;
+}
+
+.movie p {
+  margin-top: 10px;
+  color: #ffffff;
+}
+
+.movie a {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #926e6e;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.movie a:hover {
+  color: #ffffff;
+}
+
+/* Additional styles for the Arabic text */
+
+
+h1, h2, p {
+  text-align: left;
+}
+h1{
+  font-family: none;
+  
+}
+
+
+.movie {
+display: flex;
+flex-direction: column;
+}
+
+.movie video {
+width: 100%;
+}header {
+  background-color: orangered;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: white;
+  margin: 0;
+}
+
+nav {/*خلفية الnavbar بتاعت الكلام بتاع الheader*/
+  background-color: orangered;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: white;
+  color: orangered;
+}
+header{/*navbar*/
+  background-color:orangered ;
+  width:100% ;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 5px;
+  align-content: center;
+  #listContainer {
+    display: none;
+  }
+ 
+
+
+}
+.logo{
+  
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  font-size: 2em;
+}
+
+.navigation a{
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+  font-size: 1.3em;
+  padding-left: 10px;
+}
+.navigation a:hover{
+  color: #010101;
+}
+h3{
+  color: white;
+}
+
+
