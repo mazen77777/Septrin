@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Summary for film_Mazen Wael</title>
+  <style>
+    * {
+      padding: 5px;
+    }
+
+    body {
+      background-color: rgb(53, 53, 53);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    header {
+      color: orangered;
+      margin-left: 45px;
+      margin-top: 7px;
+      margin-bottom: 30px;
+      font-size: 27px;
+      user-select: none;
+    }
+
+    .h1 {
+      padding: 1px;
+      margin: 1px;
+    }
+
+    nav a.nav {
+      text-decoration: none;
+      margin-left: 45px;
+      font-size: 20px;
+      color: orangered;
+    }
+
+    nav a.nav:hover {
+      text-decoration: none;
+      margin-left: 45px;
+      font-size: 20px;
+      color: #ffd700;
+    }
+
+    .searchs {
+      width: 70%;
+      margin-left: 20%;
+      margin-right: 10%;
+      margin-top: 15px;
+      display: block;
+      height: 30px;
+      color: black;
+      box-shadow: 1px  orangered;
+      background-color: rgb(53, 53, 53);
+      position: relative;
+    }
+    .search{
+      width: 80%;
+      box-shadow: 1px orangered;
+    }
+    div i {
+      font-size: 20px;
+    }
+    .main {
+      display: flex;
+    } 
+    
+    .main div {
+      margin: 10px;
+      border: 5px solid black;
+      width: 33%;
+      background-color: rgb(156, 110, 25);
+    }
+
+    .film_name {
+      width: 95%;
+      padding: 1px;
+      margin: 5px;
+      border: 5px solid black;
+      color: black;
+      background-color: rgb(156, 110, 25);
+    }
+
+    .main img {
+      width: 95%;
+      padding: 1px;
+      margin: 5px;
+      border: 5px solid black;
+      height: 50%;
+    }
+
+    .summary {
+      padding: 5px;
+      color: rgb(0, 0, 0);
+      margin: 5px;
+      border-top: 5px solid black;
+      border-bottom: 5px solid black;
+      height: 220px;
+      text-decoration: scroll;
+
+    }
+
+
+
+    ul {
+      margin-top: -1px;
+      border-bottom: 5px solid black;
+      list-style: none;
+    }
+
+    .an {
+      color: whitesmoke;
+      font-size: 100%;
+    }
+
+    p {
+      color: rgb(0, 0, 0);
+      overflow: auto;
+    }
+
+    p::-webkit-scrollbar {
+      display: none;
+    }
+
+
+
+    .her {
+      color: orange;
+      font-size: 20px;
+      text-decoration: none;
+    }
+    .product-list{
+      padding: 20px 0;
+      background-color: white;
+      height: 77px;
+      width: 50%;
+      margin-left: 26%;
+      margin-right: 1%;
+      display: none;
+      overflow: scroll;
+
+    }
+    .product-list::-webkit-scrollbar {
+      display: none;
+    }
+    input.search:focus + .product-list {
+      content: "";
+      display: block;
+    }
+    .product-list:hover{
+      display: block;
+    }
+    .product{
+      display: flex;
+      width: 90%;
+      border: 4px solid black;
+      margin-left: 4%;
+      display: flex;
+      align-items: center;
+      margin-top: 0px;
+      margin-bottom: 7px;
+    }
+    .product img{
+      width: 60px;
+      height: 60px;
+      
+    }
+    .cont a{
+      color: black;
+      font-size: 20px;
+      text-decoration: none;
+    }
+    
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <script>
+    function search() {
+      let searchBar = document.querySelector('.search').value.toUpperCase(); search
+      let produtlist = document.querySelector('.product-list');
+      let product = document.querySelectorAll('.product');
+      let productName = document.getElementsByTagName('h2');
+
+      for(let i=0; i< productName.length; i++) {
+        if(productName[i].innerHTML.toUpperCase().indexOf(searchBar)>= 0){
+          product[i].style.display ="";
+
+        }else{
+          product[i].style.display = "none";
+        }
+    }}
+  </script>
+  <header>
+    <h1 class="h1">Septrin</h1>
+  </header>
+  <nav>
+    <a class="nav" href="summary for film white.html">White Mode</a>
+    <a class="nav" href="../index.html">Home</a>
+    <a class="nav" href="../profile/profile.html">Profile</a>
+    <a class="nav" href="feedback_black.html">Feedback</a>
+    <a class="nav" href="../login/login.html">Login</a>
+  </nav>
+
+  <div class="cont">
+    <div class="searchs">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input class="search" type="search" placeholder="search...." name="search" onkeyup="search()"/>
+      <div class="product-list">
+        <div class="product">
+          <img src="Fast_and_the_furious_poster.jpg" alt="img Fast and the furious 1" />
+          <h2><a href="fast 1_black.html">Fast and the furious 1</a></h2>
+        </div>
+        <div class="product">
+          <img src="d45024bcdc.jpg" alt="img Fast and the furious 2" />
+          <h2><a href="fast 2_black.html">Fast and the furious 2</a></h2>
+        </div>
+        <div class="product">
+          <img src="MV5BMTQ2NTMxODEyNV5BMl5BanBnXkFtZTcwMDgxMjA0MQ@@._V1_.jpg" alt="img Fast and the furious 3" />
+          <h2><a href="fast 3_black.html">Fast and the furious 3</a></h2>
+        </div>
+        <div class="product">
+          <img src="Fast_and_Furious_Poster.jpg" alt="img Fast and the furious 4" />
+          <h2><a href="fast 4_black.html">Fast and the furious 4</a></h2>
+        </div>
+        <div class="product">
+          <img src="MV5BMTUxNTk5MTE0OF5BMl5BanBnXkFtZTcwMjA2NzY3NA@@._V1_FMjpg_UX1000_.jpg"
+            alt="img Fast and the furious 5" />
+          <h2><a href="fast 5_black.html">Fast and the furious 5</a></h2>
+        </div>
+        <div class="product">
+          <img src="MV5BMTM3NTg2NDQzOF5BMl5BanBnXkFtZTcwNjc2NzQzOQ@@._V1_.jpg" alt="img Fast and the furious 6" />
+          <h2><a href="fast 6_black.html">Fast and the furious 6</a></h2>
+        </div>
+        <div class="product">
+          <img src="11.jpg" alt="img Fast and the furious 7" />
+          <h2><a href="fast 7_black.html">Fast and the furious 7</a></h2>
+        </div>
+        <div class="product">
+          <img src="12.jpg" alt="img Fast and the furious 8" />
+          <h2><a href="fast 8_black.html">Fast and the furious 8</a></h2>
+        </div>
+        <div class="product">
+          <img src="15.jpg" alt="img Fast and the furious 9" />
+          <h2><a href="fast 9_black.html">Fast and the furious 9</a></h2>
+        </div>
+        <div class="product">
+          <img src="Fast_X_poster.jpg" alt="img Fast and the furious X" />
+          <h2><a href="fast X_black.html">Fast and the furious X</a></h2>
+        </div>
+        <div class="product">
+          <img src="baby.jpg" alt="img Baby driver" />
+          <h2><a href="baby driver_black.html">Baby driver</a></h2>
+        </div>
+        <div class="product">
+          <img src="Need_For_Speed_poster.jpg" alt="img Need For Speed" />
+          <h2><a href="need for spead_black.html">Need_For_Speed</a></h2>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  <div class="main">
+    <div>
+      <h1 class="film_name">Fast and the furious 1</h1>
+      <img src="Fast_and_the_furious_poster.jpg" alt="img Fast and the furious 1" />
+      <p class="summary"><strong>Los Angeles police officer Brian O’Conner must decide where his loyalty really lies
+          when
+          he
+          becomes enamored with the
+          street racing world he has been sent undercover to destroy. Meanwhile, Los Angeles street racer Dominic
+          Toretto
+          falls
+          under the suspicion of the LAPD due to a string of high-speed electronics truck robberies. Brian joins
+          Toretto’s
+          highly
+          skilled racing crew undercover to convict him. However, Brian finds himself both enamored with this new world
+          and
+          in
+          love with Toretto’s sister, Mia. As a rival racing crew gains strength, Brian must decide where his loyalty
+          truly
+          lies</strong></p>
+      <ul>
+        <li><strong>Author</strong> :<span class="an">Rob Cohen</span> </li>
+        <li><strong>Film evaluation</strong> :<span class="an">10/10</span> </li>
+        <li><strong>Publication date</strong> :<span class="an">2001</span> </li>
+        <li><strong>Movie stars</strong> :<span class="an">Vin Diesel(Dominic Toretto),Michelle
+            Rodriguez(Letty),JordanaBrewster(MiaToretto),Rick Yuen(Johnny Tran),ChadLindberg(Jesse),Johnny
+            Strong(Leon)</span>
+        </li>
+      </ul>
+      <p>You can watch the movie <a class="her" href="https://www.youtube.com/watch?v=2TAOizOnNPo" target="_blank"
+          title="go to film">her</a>
+      </p>
+    </div>
+    <div>
+      <h1 class="film_name">Fast and the furious 2</h1>
+      <img src="d45024bcdc.jpg" alt="img Fast and the furious 2" />
+      <p class="summary"><strong>Former cop Brian O’Conner is called upon to bust a dangerous criminal. He recruits the
+          help
+          of his ex-con friend Roman
+          Pearce, a street racer who has a chance to redeem himself. Together, they work with undercover U.S. Customs
+          Service
+          agent Monica Fuentes to bring down Miami-based drug lord Carter Verone. The mission involves high-speed races,
+          intense
+          action, and a desperate race for survival and justice</strong></p>
+      <ul>
+        <li><strong>Author</strong> :<span class="an">Rob Cohen</span> </li>
+        <li><strong>Film evaluation</strong> :<span class="an">10/9.5</span> </li>
+        <li><strong>Publication date</strong> :<span class="an">2003</span> </li>
+        <li><strong>Movie stars</strong> :<span class="an">Vin Diesel(Dominic Toretto),Michelle
+            Rodriguez(Letty),JordanaBrewster(MiaToretto),Rick Yuen(Johnny Tran),ChadLindberg(Jesse),Johnny
+            Strong(Leon)</span> </li>
+      </ul>
+      <p>You can watch the movie <a class="her" href="https://www.youtube.com/watch?v=ZZGkV_xWGw4&t=4s" target="_blank"
+          title="go to film">her</a>
+      </p>
+    </div>
+    <div>
+      <h1 class="film_name">Fast and the furious 3</h1>
+      <img src="MV5BMTQ2NTMxODEyNV5BMl5BanBnXkFtZTcwMDgxMjA0MQ@@._V1_.jpg" alt="img Fast and the furious 3" />
+      <p class="summary"><strong>an American teenager named Sean Boswell moves to Tokyo to avoid a jail sentence in
+          America.
+          There, he discovers the
+          thrilling world of drift racing in the underground streets of Japan. Sean’s growing talent for drifting
+          unsettles
+          the
+          Japanese Mafia, which profits from this dangerous sport. As confrontations arise, Sean faces a simple choice:
+          drift
+          or
+          die</strong></p>
+      <ul>
+        <li><strong>Author</strong> :<span class="an">Rob Cohen</span> </li>
+        <li><strong>Film evaluation</strong> :<span class="an">10/10</span> </li>
+        <li><strong>Publication date</strong> :<span class="an">2006</span> </li>
+        <li><strong>Movie stars</strong> :<span class="an">Vin Diesel(Dominic Toretto),Michelle
+            Rodriguez(Letty),JordanaBrewster(MiaToretto),Rick Yuen(Johnny Tran),ChadLindberg(Jesse),Johnny
+            Strong(Leon)</span> </li>
+      </ul>
+      <p>You can watch the movie <a class="her" href="https://www.youtube.com/watch?v=p8HQ2JLlc4E" target="_blank"
+          title="go to film">her</a>
+      </p>
+    </div>
+  </div>
+  <!---->
+  <div class="main">
+    <div>
+      <h1 class="film_name">Fast and the furious 4</h1>
+      <img src="Fast_and_Furious_Poster.jpg" alt="img Fast and the furious 4" />
+      <p class="summary"><strong>In the fourth installment of the Fast & Furious franchise, Dominic Toretto (played by
+          Vin
+          Diesel) returns to the streets
+          where it all began. He teams up with Brian O’Conner (played by Paul Walker), who is now working for the FBI,
+          to
+          take
+          down a heroin importer. Their mission involves infiltrating the operation of this criminal. As they race
+          muscle
+          cars,
+          tuners, and exotics across Los Angeles and through the Mexican desert, they must confront a shared enemy and
+          navigate an
+          uncertain new trust. The film features high-speed action, daring heists, and intense car chases1.
+
+          The movie begins in the Dominican Republic, where Dominic and Letty Ortiz (played by Michelle Rodriguez)
+          hijack a
+          truck.
+          Letty falls behind during the operation, and Dominic later learns that she was killed in Los Angeles. Brian
+          Conner,
+          an
+          undercover cop, allowed Dominic to escape previously. Now working for the FBI, Brian is searching for an
+          elusive
+          drug
+          dealer known as Braga. Their paths intersect when Braga hires new drivers, and both Dominic and Brian put
+          themselves
+          forward. Dominic seeks revenge for Letty’s death, while Brian aims to take down Braga
+
+
+        </strong></p>
+      <ul>
+        <li><strong>Author</strong> :<span class="an">Rob Cohen</span> </li>
+        <li><strong>Film evaluation</strong> :<span class="an">10/9</span> </li>
+        <li><strong>Publication date</strong> :<span class="an">2009</span> </li>
+        <li><strong>Movie stars</strong> :<span class="an">Vin Diesel(Dominic Toretto),Michelle
+            Rodriguez(Letty),JordanaBrewster(MiaToretto),Rick Yuen(Johnny Tran),ChadLindberg(Jesse),Johnny
+            Strong(Leon)</span> </li>
+      </ul>
+      <p>You can watch the movie <a class="her" href="https://www.youtube.com/watch?v=BCg9R_MGZKg&t=1s" target="_blank"
+          title="go to film">her</a>
+      </p>
+    </div>
+    <div>
+      <h1 class="film_name">Fast and the furious 5</h1>
+      <img src="MV5BMTUxNTk5MTE0OF5BMl5BanBnXkFtZTcwMjA2NzY3NA@@._V1_FMjpg_UX1000_.jpg"
+        alt="img Fast and the furious 5" />
+      <p class="summary"><strong>In Fast Five, Dominic Toretto (played by Vin Diesel), Brian O’Conner (played by Paul
+          Walker), and Mia Toretto (played by
+          Jordana Brewster) embark on a daring heist to steal $100 million from the corrupt businessman Hernan Reyes
+          (played
+          by
+          Joaquim de Almeida). Their plan unfolds in Rio de Janeiro, Brazil, where they assemble an elite team of
+          skilled
+          racers.
+          However, they are relentlessly pursued by the U.S. Diplomatic Security Service (DSS) agent Luke Hobbs (played
+          by
+          Dwayne
+          Johnson). The stakes are high, and the action is intense as they race against time and danger to secure their
+          freedom</strong></p>
+      <ul>
+        <li><strong>Author</strong> :<span class="an">Rob Cohen</span> </li>
+        <li><strong>Film evaluation</strong> :<span class="an">10/8</span> </li>
+        <li><strong>Publication date</strong> :<span class="an">2011</span> </li>
+        <li><strong>Movie stars</strong> :<span class="an">Vin Diesel(Dominic Toretto),Michelle
+            Rodriguez(Letty),JordanaBrewster(MiaToretto),Rick Yuen(Johnny Tran),ChadLindberg(Jesse),Johnny
+            Strong(Leon)</span> </li>
+      </ul>
+      <p>You can watch the movie <a class="her" href="https://www.youtube.com/watch?v=vcn2GOuZCKI" target="_blank"
+          title="go to film">her</a>
+      </p>
+    </div>
+    <div>
+      <h1 class="film_name">Fast and the furious 6</h1>
+      <img src="MV5BMTM3NTg2NDQzOF5BMl5BanBnXkFtZTcwNjc2NzQzOQ@@._V1_.jpg" alt="img Fast and the furious 6" />
+      <p class="summary"><strong>IIn Fast & Furious 6, Hobbs recruits Dominic Toretto and Brian O’Conner to take down a
+          team
+          of mercenaries. However,
+          Dominic faces an unexpected distraction: his presumed deceased girlfriend, Letty. After their Rio heist left
+          them
+          with
+          $100 million, the crew scattered across the globe. Now, they must outmatch the lethal mercenary drivers led by
+          Shaw,
+          whose second-in-command is none other than Letty herself. The mission involves high-speed chases, daring
+          stunts,
+          and
+          intense action as they race against time to save Letty and stop Shaw</strong></p>
+      <ul>
+        <li><strong>Author</strong> :<span class="an">Rob Cohen</span> </li>
+        <li><strong>Film evaluation</strong> :<span class="an">10/8</span> </li>
+        <li><strong>Publication date</strong> :<span class="an">2013</span> </li>
+        <li><strong>Movie stars</strong> :<span class="an">Vin Diesel(Dominic Toretto),Michelle
+            Rodriguez(Letty),JordanaBrewster(MiaToretto),Rick Yuen(Johnny Tran),ChadLindberg(Jesse),Johnny
+            Strong(Leon)</span> </li>
+      </ul>
+      <p>You can watch the movie <a class="her" href="https://www.youtube.com/watch?v=oc_P11PNvRs" target="_blank"
+          title="go to film">her</a>
+      </p>
+    </div>
+  </div>
+
+  <!---->
+  <div class="main">
+    <div>
+      <h1 class="film_name">Fast and the furious 7</h1>
+      <img src="11.jpg" alt="img Fast and the furious 7" />
+      <p class="summary"><strong>In Fast & Furious 7, the stakes are higher than ever as Dominic Toretto (played by Vin
+          Diesel) and his crew face a
+          formidable adversary: Deckard Shaw (played by Jason Statham). Here’s a quick summary:
+
+          Background:
+          After defeating international terrorist Owen Shaw, Dominic and his crew believed they had left the criminal
+          mercenary
+          life behind.
+          However, Owen’s brother, Deckard Shaw, seeks revenge for his comatose sibling and begins targeting the crew
+          one by
+          one12.
+          The Mission:
+          Shaw is out for blood, and the crew must stop him.
+          A Somalian terrorist named Jakarde and a shadowy government official known as “Mr. Nobody” are also after a
+          powerful
+          computer terrorism program called “God’s Eye.”
+          This program can turn any technological device into a weapon.
+          Torretto and his team find themselves caught in a power struggle between terrorists and the United States
+          government1.
+          Action and Thrills:
+          The film kicks off in London, where Deckard Shaw stands by his brother Owen’s bedside.
+          Shaw promises to settle the score for his brother’s injuries.
+          Meanwhile, Dom and Letty participate in a high-stakes race in California.
+          As the crew races against time, they must confront Shaw and retrieve the God’s Eye program
+
+        </strong></p>
+      <ul>
+        <li><strong>Author</strong> :<span class="an">Rob Cohen</span> </li>
+        <li><strong>Film evaluation</strong> :<span class="an">10/7</span> </li>
+        <li><strong>Publication date</strong> :<span class="an">2015</span> </li>
+        <li><strong>Movie stars</strong> :<span class="an">Vin Diesel(Dominic Toretto),Michelle
+            Rodriguez(Letty),JordanaBrewster(MiaToretto),Rick Yuen(Johnny Tran),ChadLindberg(Jesse),Johnny
+            Strong(Leon)</span> </li>
+      </ul>
+      <p>You can watch the movie <a class="her" href="https://www.youtube.com/watch?v=Skpu5HaVkOc" target="_blank"
+          title="go to film">her</a>
+      </p>
+    </div>
+    <div>
+      <h1 class="film_name">Fast and the furious 8</h1>
+      <img class="img8" src="fast-and-furious-8-poster.jpg" alt="img Fast and the furious 8" />
+      <p class="summary"><strong>In Fast & Furious 8, Dominic Toretto and his wife, Letty, are enjoying their honeymoon
+          in
+          Cuba when they notice Dom’s
+          cousin, Fernando, getting into trouble with a loan shark named Hernan Reyes. Fernando owes money and can’t pay
+          off
+          his
+          debts. Dom encourages Fernando to settle the matter through a car race. They compete fiercely, and Dom
+          narrowly
+          wins.
+          However, instead of claiming the car, he lets Fernando keep it, emphasizing that respect matters more than
+          material
+          possessions.
+
+          But the idyllic honeymoon takes a dark turn when Dom encounters the enigmatic cyber terrorist, Cipher. She
+          lures
+          him
+          into her world by asking for help fixing her car, and eventually, she persuades him to work for her. Cipher
+          forces
+          Dom
+          to keep their collaboration a secret by threatening his team. She assigns him a mission: retrieve an EMP
+          device
+          that
+          went missing from the Gulf and ended up in Berlin. This powerful device can wipe out an entire electrical
+          grid.
+
+          As Dom races against time, he crosses paths with Hobbs, who tries to convince him to deliver the EMP device to
+          him.
+          Dom
+          gathers his team and informs them of the mission. In Berlin, they create a diversion, steal the EMP, and
+          escape.
+          However, Dom decides to take another route and delivers the device to Cipher instead. Hobbs gets arrested
+          during
+          the
+          process.
+
+          Things escalate when Deckard Shaw, whom Hobbs helped imprison, enters the picture. Both Shaw and Hobbs are
+          bailed
+          out
+          and recruited by Mr. Nobody, an intelligence officer. The team is furious with Dom’s choices and decides to
+          work
+          together to capture him and Cipher. During their pursuit, they discover that Cipher is after Ramsey’s
+          software,
+          known as
+          “God’s Eye”, which can turn any technological device into a weapon. Cipher reveals that she has Dom’s
+          ex-lover,
+          Elena,
+          and their son hostage, ensuring Dom’s loyalty.
+
+          Despite the tension, Dom manages to escape briefly to seek help from Shaw’s mother. The team continues their
+          efforts
+          to
+          capture him as he steals a nuclear football on his latest mission. The stakes are high, and the fate of the
+          Furious
+          hangs in the balance
+
+
+          .</strong></p>
+      <ul>
+        <li><strong>Author</strong> :<span class="an">Rob Cohen</span> </li>
+        <li><strong>Film evaluation</strong> :<span class="an">10/7</span> </li>
+        <li><strong>Publication date</strong> :<span class="an">2017</span> </li>
+        <li><strong>Movie stars</strong> :<span class="an">Vin Diesel(Dominic Toretto),Michelle
+            Rodriguez(Letty),JordanaBrewster(MiaToretto),Rick Yuen(Johnny Tran),ChadLindberg(Jesse),Johnny
+            Strong(Leon)</span> </li>
+      </ul>
+      <p>You can watch the movie <a class="her" href="https://www.youtube.com/watch?v=uisBaTkQAEs&t=6s" target="_blank"
+          title="go to film">her</a>
+      </p>
+    </div>
+    <div>
+      <h1 class="film_name">Fast and the furious 9</h1>
+      <img src="15.jpg" alt="img Fast and the furious 9" />
+      <p class="summary"><strong>In Fast & Furious 9, the saga continues with high-octane action, family ties, and
+          unexpected revelations. Let’s dive
+          into the adrenaline-fueled world of Dom Toretto and his crew:
+
+          Background:
+          The film opens in 1989 during a pivotal car race where Jack Toretto, father to Dom, Mia, and Jakob, tragically
+          loses
+          his
+          life.
+          In reality, Jack intentionally sabotaged his own car to throw the race, desperate for the money it would bring
+          to
+          support his family1.
+          Present Day:
+          Dom (Vin Diesel) is now retired, living off the grid with his wife, Letty (Michelle Rodriguez), and their son,
+          Brian.
+          Roman (Tyrese Gibson), Tej (Ludacris), and Ramsey (Nathalie Emmanuel) approach Dom with news of Cipher’s
+          (Charlize
+          Theron) capture by Mr. Nobody (Kurt Russell).
+          Cipher’s plane crashes in Montecinto, Central America, and the team investigates the wreckage.
+          They discover that Jakob (John Cena), Dom and Mia’s estranged brother, is behind the hijacking.
+          Jakob steals a powerful computer weapon system device called Aries and escapes23.
+          Family Ties and Betrayal:
+          Mia Toretto (Jordana Brewster) joins the team, determined to help despite the risks.
+          Dom confronts Jakob, who reveals their father’s true intentions during the fatal race in 1989.
+          Jack had planned to fake his death to secure a better life for his family, but things went awry when Jakob
+          tampered
+          with
+          the car, causing it to explode.
+          Now, Jakob is working with Otto (Thue Ersted Rasmussen) and Cipher to obtain the other half of Aries in
+          Edinburgh,
+          United Kingdom23.
+          The Ultimate Showdown:
+          The team splits up, with Dom heading to London to confront Jakob.
+          As they race against time, old wounds resurface, and the sins of the past come to light.
+          The fate of their family hangs in the balance as they chase Jakob and Cipher, battling both personal demons
+          and
+          global
+          threats</strong></p>
+      <ul>
+        <li><strong>Author</strong> :<span class="an">Rob Cohen</span> </li>
+        <li><strong>Film evaluation</strong> :<span class="an">10/7</span> </li>
+        <li><strong>Publication date</strong> :<span class="an">2021</span> </li>
+        <li><strong>Movie stars</strong> :<span class="an">Vin Diesel(Dominic Toretto),Michelle
+            Rodriguez(Letty),JordanaBrewster(MiaToretto),Rick Yuen(Johnny Tran),ChadLindberg(Jesse),Johnny
+            Strong(Leon)</span> </li>
+      </ul>
+      <p>You can watch the movie <a class="her" href="https://www.youtube.com/watch?v=FUK2kdPsBws&t=1s" target="_blank"
+          title="go to film">her</a>
+      </p>
+    </div>
+  </div>
+
+  <!---->
+  <div class="main">
+    <div>
+      <h1 class="film_name">Fast and the furious X</h1>
+      <img src="Fast_X_poster.jpg" alt="img Fast and the furious X" />
+      <p class="summary"><strong>In Fast X, Dom Toretto and his family face their most formidable adversary yet: Dante
+          Reyes, the vengeful son of drug
+          kingpin Hernan Reyes. After a daring heist in 2011, Dom and his crew inadvertently set off a chain of events
+          that
+          lead
+          to Dante’s thirst for revenge. The film takes us on a high-octane ride across the globe, from Los Angeles to
+          Rome,
+          Brazil to London, and even Antarctica. New allies emerge, old enemies resurface, and everything changes when
+          Dom
+          discovers that his own 8-year-old son is Dante’s ultimate target. Directed by Louis Leterrier, the movie
+          features
+          returning cast members like Michelle Rodriguez, Tyrese Gibson, and Jason Statham, along with new additions
+          like
+          Brie
+          Larson and Rita Moreno1. The final road begins, and Dom’s family must fight for their lives against their most
+          dangerous
+          foe yet
+        </strong></p>
+      <ul>
+        <li><strong>Author</strong> :<span class="an">Rob Cohen</span> </li>
+        <li><strong>Film evaluation</strong> :<span class="an">10/5</span> </li>
+        <li><strong>Publication date</strong> :<span class="an">2023</span> </li>
+        <li><strong>Movie stars</strong> :<span class="an">Vin Diesel(Dominic Toretto),Michelle
+            Rodriguez(Letty),JordanaBrewster(MiaToretto),Rick Yuen(Johnny Tran),ChadLindberg(Jesse),Johnny
+            Strong(Leon)</span> </li>
+      </ul>
+      <p>You can watch the movie <a class="her" href="https://www.youtube.com/watch?v=32RAq6JzY-w&t=4s" target="_blank"
+          title="go to film">her</a>
+      </p>
+    </div>
+    <div>
+      <h1 class="film_name">Baby driver</h1>
+      <img src="baby.jpg" alt="img Baby driver" />
+      <p class="summary"><strong>“Baby Driver” is an exhilarating action film directed by Edgar Wright. The story
+          revolves
+          around Baby, a young getaway
+          driver living in Atlanta, Georgia. Here are the key points:
+
+          Baby’s Unique Talent: Baby is partially hearing impaired but possesses an extraordinary skill—he can make any
+          daring
+          move while driving, whether in slow motion or at breakneck speed, as long as the right track is playing. His
+          life
+          revolves around music, which he uses to drown out the ringing in his ears caused by tinnitus.
+          Debt and Crime: Baby works as the nearly silent getaway driver for a robbery syndicate managed by the cunning
+          Doc.
+          Doc
+          organizes the crimes, hires the criminals, and places them in Baby’s car. Baby’s debt to Doc stems from
+          stealing
+          one
+          of
+          his cars.
+          Rhythm and Music: The film ingeniously syncs action sequences with music. From the slamming of car doors to
+          the
+          squealing tires during intense car chases, everything moves in rhythm with the soundtrack. Even everyday
+          activities
+          seem
+          like part of Baby’s personal soundtrack.
+          Cast: Ansel Elgort portrays Baby, while Kevin Spacey plays the role of Doc. Other notable cast members include
+          Jon
+          Hamm,
+          Eiza Gonzalez, Jon Bernthal, and Jamie Foxx.
+          “Baby Driver” weaves music, cars, and characters into a thrilling and joyful cinematic experience—a must-watch
+          for
+          anyone seeking adrenaline-fueled entertainment
+        </strong></p>
+      <ul>
+        <li><strong>Author</strong> :<span class="an">Edgar Wright</span> </li>
+        <li><strong>Film evaluation</strong> :<span class="an">10/8</span> </li>
+        <li><strong>Publication date</strong> :<span class="an">2017</span> </li>
+        <li><strong>Movie stars</strong> :<span class="an">Jon Hamm (Paddy),
+            Wilbur Fitzgerald (judge),
+            Jon Bernthal (Griff),
+            Jamie Foxx (Pats),
+            Ansel Elgort (Baby),
+            Eiza Gonzalez (Darling),
+            Marisol Correa (Atlanta officer)</span> </li>
+      </ul>
+      <p>You can watch the movie <a class="her" href="https://www.youtube.com/watch?v=zTvJJnoWIPk" target="_blank"
+          title="go to film">her</a>
+      </p>
+    </div>
+    <div>
+      <h1 class="film_name">Need for speed</h1>
+      <img src="Need_For_Speed_poster.jpg" alt="img Need for speed" />
+      <p class="summary"><strong>In the 2014 film “Need for Speed”, Tobey Marshall, a skilled street racer and mechanic,
+          finds himself framed for a
+          murder he didn’t commit. After serving time in prison, he seeks redemption, recognition in the racing world,
+          and a
+          solution to his problems. But above all, his driving force is revenge. To achieve this, he reacquires the
+          fastest
+          car
+          from his workshop and enters the secretive and high-stakes race known as The DeLeon. Along the way, he faces
+          challenges,
+          evades the police, and confronts his ex-partner, Dino Brewster, who betrayed him. The film combines love,
+          redemption,
+          revenge, and motor oil in a thrilling ride across the country
+        </strong></p>
+      <ul>
+        <li><strong>Author</strong> :<span class="an">John Gatins and George Nolfi</span> </li>
+        <li><strong>Film evaluation</strong> :<span class="an">10/7</span> </li>
+        <li><strong>Publication date</strong> :<span class="an">2014</span> </li>
+        <li><strong>Movie stars</strong> :<span class="an">Aaron Paul as Toby Marshall,
+            Imogen Poots as Julia Bonnet,
+            Dominic Cooper as Dino Brewster,
+            Kid Cudi as Benny,
+            Rami Malek as Finn,
+            Michael Keaton as Monarch</span> </li>
+      </ul>
+      <p>You can watch the movie <a class="her" href="https://www.youtube.com/watch?v=u3wtVI-aJuw" target="_blank"
+          title="go to film">her</a>
+      </p>
+    </div>
+  </div>
+
+</body>
+
+</html>

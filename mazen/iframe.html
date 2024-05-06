@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" >
+ <head>
+  <title>i frame</title>
+  <style>
+   body{
+    background-color: orangered;
+   }
+   iframe {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    height: 400px;
+    overflow: auto;
+    display: flex;
+   }
+   div::-webkit-scrollbar{
+    display: none;
+   }
+   div{
+    display: flex;
+   }
+  </style>
+
+ </head>
+ <body>
+  <div>
+  <iframe src="feedback_black.html"></iframe>
+  <iframe src="feedback_white.html"></iframe>
+  </div>
+    <div>
+     <iframe src="../profile/profile.html"></iframe>
+     <iframe src="../login/login.html"></iframe>
+    </div>
+ </body>
+</html>
